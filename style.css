@@ -6,6 +6,7 @@ body{
     justify-content: center;
     align-items: center;
      font-family: 'Segoe UI', sans-serif;
+     background-color: #e49696;
 }
 .todo-container{
    background-color: white;
@@ -95,4 +96,68 @@ li:hover { background: #f9f9f9; }
    padding: 5px 20px;
    border: none;
 
+}
+/* .cou{
+ background-color: rgb(84, 84, 225);
+  display: flex;
+   justify-content: center;
+
+}
+  
+.cou button{
+background-color: #ff4d4d;
+   width: 50px;
+   color: white;
+   border-radius: 10px;
+   font-size: 30px;
+   font-weight: bold;
+   border: none;
+   margin: 10px;
+  
+   padding: 10px 10px;
+}  */
+.stats{
+   display: flex;
+   justify-content: center;
+   background-color: rgb(64, 112, 225);
+   border-radius: 10px;   
+   
+   
+}
+.stats p{
+   font-size: 10px;
+   color: #f9f7f7;
+   /* gap: 10px; */
+   font-weight: bold;
+   
+   padding: 10px;
+   /* border-radius: 10px; */
+  
+}
+.stats .tt{
+ background-color: #ff4d4d;
+ padding: 2px 5px;
+  border-radius: 4px;
+   color: white;
+   margin-left: 3px;
+  
+   
+}
+.stats .ct{
+ background-color: #ff4d4d;
+   padding: 2px;
+   color: white;
+   margin-left: 3px;
+    padding: 2px 5px;
+  border-radius: 4px;
+   
+}
+.stats .bt{
+ background-color: #ff4d4d;
+   padding: 2px 5px;
+   color: white;
+   margin-left: 3px;
+    padding: 2px 5px;
+  border-radius: 4px;
+   
 }
