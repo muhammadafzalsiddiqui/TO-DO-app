@@ -10,11 +10,22 @@ if(inptValue.trim() !==""){
 
 let li=document.createElement("li")
 let span = document.createElement("span")
+let button = document.createElement("button")
+
 
 span.classList.add("task-text");
 span.textContent=inptValue;
+button.textContent="delete"
+button.classList.add("button");
+// button.style.backgroundColor="red"
+ button.addEventListener("click",function(detss){
+    detss.stopPropagation();
+    span.remove();
+    button.remove();
 
+ })
 li.appendChild(span)
+li.appendChild(button)
 tasklist.appendChild(li);
 
 

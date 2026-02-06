@@ -88,3 +88,11 @@ li:hover { background: #f9f9f9; }
 .lt{
    text-decoration: line-through;
 }
+.button{
+   background-color: red;
+   border-radius: 5px;
+   color: white;
+   padding: 5px 20px;
+   border: none;
+
+}
