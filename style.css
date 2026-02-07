@@ -58,6 +58,7 @@ input {
     border: 1px solid #ddd;
     border-radius: 5px;
     outline: none;
+    cursor: text;
 }
 ul {
    list-style: none;
@@ -72,6 +73,7 @@ li {
     justify-content: space-between;
     align-items: center;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 li:hover { background: #f9f9f9; }
@@ -97,25 +99,37 @@ li:hover { background: #f9f9f9; }
    border: none;
 
 }
-/* .cou{
- background-color: rgb(84, 84, 225);
-  display: flex;
-   justify-content: center;
-
+.taskList{
+   min-height: 200px;
+   max-height: 200px;
+   overflow-y: auto;
+   padding-right: 5px;
+   /* cursor: pointer; */
 }
-  
-.cou button{
-background-color: #ff4d4d;
-   width: 50px;
-   color: white;
-   border-radius: 10px;
-   font-size: 30px;
-   font-weight: bold;
-   border: none;
-   margin: 10px;
-  
-   padding: 10px 10px;
-}  */
+
+/* 1. Scrollbar ka pura area */
+.taskList::-webkit-scrollbar {
+    width: 8px; /* Thora sa width barha di taaki nazar aaye */
+}
+
+/* 2. Scrollbar ka rasta (Track) */
+.taskList::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+
+.taskList::-webkit-scrollbar-thumb {
+    background: #bbb; 
+    border-radius: 10px;
+    border: 2px solid #f1f1f1; /
+}
+
+
+.taskList::-webkit-scrollbar-thumb:hover {
+    background: rgb(64, 112, 225); 
+}
+
 .stats{
    display: flex;
    justify-content: center;
